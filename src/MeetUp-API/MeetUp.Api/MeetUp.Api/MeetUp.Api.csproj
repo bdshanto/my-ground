@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MeetUp.DataContext\MeetUp.DataContext.csproj" />
+    <ProjectReference Include="..\MeetUp.IoC\MeetUp.IoC.csproj" />
     <ProjectReference Include="..\MeetUp.Models\MeetUp.Models.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,4 @@
-﻿namespace MeetUp.Models.Models
+﻿namespace MeetUp.Model.Models
 {
     public class Value
     {

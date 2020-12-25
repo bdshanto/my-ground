@@ -1,7 +1,7 @@
-﻿namespace MeetUp.Models.Utilities
+﻿namespace MeetUp.Model.Utilities
 {
     public class Utility
     {
-        
+
     }
 }

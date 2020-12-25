@@ -1,14 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
-using System.Threading.Tasks;
-using MeetUp.DataContext.Models;
-using MeetUp.Models.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.Formatters;
+﻿using MeetUp.DataContext.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,8 +20,6 @@ namespace MeetUp.Api.Controllers
 
         // GET: api/<ValuesController>
         [HttpGet]
-        [Consumes(MediaTypeNames.Application.Json)]
-        [ProducesResponseType(StatusCodes.Status302Found, Type = typeof(IEnumerable<JsonResult>))]
         public async Task<IActionResult> GetValues()
         {
             var dataList = await _context.Values.ToListAsync();
@@ -39,7 +30,7 @@ namespace MeetUp.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(long id)
         {
-            var value =await _context.Values.FirstOrDefaultAsync(c => c.Id == id);
+            var value = await _context.Values.FirstOrDefaultAsync(c => c.Id == id);
             return Ok(value);
         }
 

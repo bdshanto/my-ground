@@ -1,4 +1,4 @@
-﻿using MeetUp.Models.Models;
+﻿using MeetUp.Model.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MeetUp.DataContext.Models
@@ -10,5 +10,6 @@ namespace MeetUp.DataContext.Models
 
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

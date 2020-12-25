@@ -10,6 +10,6 @@ export class ValueService {
   }
 
   getValue(): any {
-    return this.http.get('http://localhost:44890/api/values');
+    return this.http.get('https://localhost:44322/api/values');
   }
 }

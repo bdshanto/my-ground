@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MeetUp.DataContext\MeetUp.DataContext.csproj" />
+    <ProjectReference Include="..\MeetUp.Models\MeetUp.Models.csproj" />
+    <ProjectReference Include="..\MeetUp.Repo.Contract\MeetUp.Repo.Contract.csproj" />
+    <ProjectReference Include="..\MeetUp.Repo\MeetUp.Repo.csproj" />
+  </ItemGroup>
+
+</Project>
