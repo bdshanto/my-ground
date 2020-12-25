@@ -17,17 +17,15 @@ namespace MeetUp.Api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register( UserDto dto)
+        public async Task<IActionResult> Register(UserDto dto)
         {
             if (!ModelState.IsValid) return BadRequest();
             if (await _iAuthRepository.UserExist(dto.UserName.ToLower())) return BadRequest("User already generated");
             //toDO: IMapper
-            var user = new User { UserName = dto.UserName };
+            var user = new User {UserName = dto.UserName};
             var createUser = await _iAuthRepository.Register(user, dto.Password);
             if (createUser.Id > 0) return Ok(createUser);
             return StatusCode(201);
         }
-
     }
-
 }
