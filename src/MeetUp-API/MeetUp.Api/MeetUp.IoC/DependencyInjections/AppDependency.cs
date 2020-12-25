@@ -1,5 +1,7 @@
-﻿using MeetUp.Repo.AppRepository;
+﻿using MeetUp.DataContext.Models;
+using MeetUp.Repo.AppRepository;
 using MeetUp.Repo.Contract;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MeetUp.IoC.DependencyInjections
@@ -10,6 +12,9 @@ namespace MeetUp.IoC.DependencyInjections
         {//Auto mapper
             /*var mappingConfig = new MapperConfiguration(mc => { mc.AddProfile(new AutoMapperConfig()); });
             services.AddSingleton(mappingConfig.CreateMapper());*/
+
+            services.AddTransient<DbContext, AppDbContext>();
+            services.AddTransient<AppDbContext>();
 
             services.AddScoped<IAuthRepository, AuthRepository>();
         }

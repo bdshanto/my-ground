@@ -50,7 +50,7 @@ namespace MeetUp.Repo.AppRepository
 
             if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt)) return null;
 
-
+            return user;
         }
 
         private bool VerifyPasswordHash(string password, byte[] userPasswordHash, byte[] userPasswordSalt)
