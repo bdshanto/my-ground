@@ -1,8 +1,14 @@
-﻿using System.Threading.Tasks;
-using MeetUp.Model.Models;
+﻿using MeetUp.Model.Models;
 using MeetUp.Models.Dtos;
 using MeetUp.Repo.Contract;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MeetUp.Api.Controllers
 {
@@ -10,22 +16,50 @@ namespace MeetUp.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthRepository _iAuthRepository;
+        private readonly IConfiguration _iConfiguration;
 
-        public AuthController(IAuthRepository iAuthRepository)
+        public AuthController(IAuthRepository iAuthRepository, IConfiguration iConfiguration = null)
         {
             _iAuthRepository = iAuthRepository;
+            _iConfiguration = iConfiguration;
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(UserDto dto)
+        public async Task<IActionResult> Register(UserForRegisterDto forRegisterDto)
         {
             if (!ModelState.IsValid) return BadRequest();
-            if (await _iAuthRepository.UserExist(dto.UserName.ToLower())) return BadRequest("User already generated");
+            if (await _iAuthRepository.UserExist(forRegisterDto.UserName.ToLower())) return BadRequest("User already generated");
             //toDO: IMapper
-            var user = new User {UserName = dto.UserName};
-            var createUser = await _iAuthRepository.Register(user, dto.Password);
+            var user = new User { UserName = forRegisterDto.UserName };
+            var createUser = await _iAuthRepository.Register(user, forRegisterDto.Password);
             if (createUser.Id > 0) return Ok(createUser);
             return StatusCode(201);
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
+        {
+            var userFromRepo = await _iAuthRepository.Login(userForLoginDto.UserName, userForLoginDto.Password);
+            if (userFromRepo == null) return Unauthorized();
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
+                new Claim(ClaimTypes.Name, userFromRepo.UserName),
+            };
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_iConfiguration.GetSection("AppSettings:Token").Value));
+            var credential = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = credential
+            };
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+
+            return Ok(new { token = tokenHandler.WriteToken(token) });
+        }
     }
+
+
 }
