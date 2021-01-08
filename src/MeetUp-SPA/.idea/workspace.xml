@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0e346b-ad93-4194-8fa3-34586685a530" name="Default Changelist" comment="" />
+    <list default="true" id="ca0e346b-ad93-4194-8fa3-34586685a530" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1m7JMN8SsnEWmWw79vUGmJjP5A6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,11 +42,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Desktop\my-ground\src\MeetUp-SPA\MeetupApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -75,6 +97,13 @@
       <workItem from="1608838654322" duration="4268000" />
       <workItem from="1609603782666" duration="68000" />
       <workItem from="1609603913460" duration="73000" />
+      <workItem from="1609956048948" duration="490000" />
+      <workItem from="1609988322387" duration="175000" />
+      <workItem from="1609988545390" duration="16000" />
+      <workItem from="1609988569558" duration="72000" />
+      <workItem from="1609989232175" duration="285000" />
+      <workItem from="1609989688932" duration="453000" />
+      <workItem from="1610124030524" duration="76000" />
     </task>
     <servers />
   </component>
@@ -92,5 +121,37 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="363" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1609989247580">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="363" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609989247580" />
+    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1609989369430">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609989369430" />
+    <state x="184" y="44" key="SettingsEditor" timestamp="1609956327086">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1609956327086" />
+    <state x="275" y="132" key="Vcs.Push.Dialog.v2" timestamp="1609988579105">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="275" y="132" key="Vcs.Push.Dialog.v2/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609988579105" />
+    <state x="462" y="243" key="cloudConfig.PluginsDialog" timestamp="1609988494483">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="462" y="243" key="cloudConfig.PluginsDialog/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609988494483" />
+    <state x="462" y="243" key="cloudConfig.PluginsDialog/0.30.1366.738@0.30.1366.738" timestamp="1609956338336" />
+    <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1609956312211">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="555" y="243" key="cloudConfig.SelfSettingsDialog/0.30.1366.738@0.30.1366.738" timestamp="1609956312211" />
   </component>
 </project>
