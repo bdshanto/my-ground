@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0e346b-ad93-4194-8fa3-34586685a530" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="ts.external.directory.path" value="D:\Desktop\my-ground\src\MeetUp-SPA\MeetupApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -104,7 +106,17 @@
       <workItem from="1609989232175" duration="285000" />
       <workItem from="1609989688932" duration="453000" />
       <workItem from="1610124030524" duration="76000" />
+      <workItem from="1610124190822" duration="203000" />
+      <workItem from="1610585209574" duration="74000" />
     </task>
+    <task id="LOCAL-00001" summary="xml update">
+      <created>1610124239614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610124239614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,35 +135,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
+    <MESSAGE value="xml update" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml update" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="363" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1609989247580">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="363" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609989247580" />
-    <state x="463" y="154" key="FileChooserDialogImpl" timestamp="1609989369430">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="463" y="154" key="FileChooserDialogImpl/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609989369430" />
-    <state x="184" y="44" key="SettingsEditor" timestamp="1609956327086">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1609956327086" />
-    <state x="275" y="132" key="Vcs.Push.Dialog.v2" timestamp="1609988579105">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="275" y="132" key="Vcs.Push.Dialog.v2/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609988579105" />
-    <state x="462" y="243" key="cloudConfig.PluginsDialog" timestamp="1609988494483">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="462" y="243" key="cloudConfig.PluginsDialog/0.30.1366.738/-69.-900.1440.870@0.30.1366.738" timestamp="1609988494483" />
-    <state x="462" y="243" key="cloudConfig.PluginsDialog/0.30.1366.738@0.30.1366.738" timestamp="1609956338336" />
-    <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1609956312211">
-      <screen x="0" y="30" width="1366" height="738" />
-    </state>
-    <state x="555" y="243" key="cloudConfig.SelfSettingsDialog/0.30.1366.738@0.30.1366.738" timestamp="1609956312211" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
