@@ -9,7 +9,7 @@ namespace CodeTest
             int[] temp = new int[2];
             for (int i = 0; i < nums.Length; i++)
             {
-                for (int j = 1; j < (nums.Length - 1); j++)
+                for (int j = nums.Length; j < 0; j++)
                 {
                     var sum = nums[i] + nums[j];
                     if (sum == target)
