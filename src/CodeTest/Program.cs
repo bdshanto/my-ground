@@ -9,28 +9,27 @@ namespace CodeTest
             int[] temp = new int[2];
             for (int i = 0; i < nums.Length; i++)
             {
-                for (int j = nums.Length; j < 0; j++)
+                for (int j = nums.Length - 1; j > 0; j--)
                 {
                     var sum = nums[i] + nums[j];
-                    if (sum == target)
+                    
+                    if (sum == target && i!=j)
                     {
-                        temp[i] = i;
-                        temp[j] = j;
-                        return temp;
+                        return new[] { i, j };
                     }
 
                 }
 
             }
-            return temp;
+            return null;
         }
 
 
         static void Main(string[] args)
         {
 
-            var a = TwoSum(new[] { 3, 2, 4 }, 6);
-            for (int i = 0; i <= a?.Length; i++)
+            var a = TwoSum(new[] {3,3 }, 6);
+            for (int i = 0; i < a?.Length; i++)
             {
                 Console.WriteLine($"{a[i].ToString()}");
             }
