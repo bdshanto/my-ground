@@ -5,17 +5,25 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './products.component.html'
 })
 export class ProductsComponent implements OnInit {
-  ProductName: string = 'A book';
-  isDisable = true;
+  productName: string = 'A book';
+  isDisable = false;
+  products = ['a book', 'a tree'];
 
   constructor() {
     setTimeout(() => {
       //  this.ProductName = 'A treee';
-      this.isDisable = false;
+      this.isDisable = true;
 
     }, 3000);
   }
 
   ngOnInit(): void {}
 
+  onAddProduct() {
+    this.products.push(this.productName);
+  }
+
+  onRemoveProduct(productName: string): void {
+    this.products = this.products.filter(p => p !== productName);
+  }
 }
