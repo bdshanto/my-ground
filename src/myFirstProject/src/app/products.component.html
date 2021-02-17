@@ -1,4 +1,4 @@
 <h1>my Products</h1>
-<inpu type="text" [(ngModule)]="ProductName"></inpu>
+<input type="text" [(ngModel)]="ProductName">
 <button (click)="ProductName='A tree'" [disabled]="isDisable">Button Change</button>
 <div>{{ProductName}}</div>
