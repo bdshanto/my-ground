@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0e346b-ad93-4194-8fa3-34586685a530" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ca0e346b-ad93-4194-8fa3-34586685a530" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +47,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\Desktop\my-ground\src\MeetUp-SPA\MeetupApp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -108,6 +106,8 @@
       <workItem from="1610124030524" duration="76000" />
       <workItem from="1610124190822" duration="203000" />
       <workItem from="1610585209574" duration="74000" />
+      <workItem from="1628921338539" duration="255000" />
+      <workItem from="1628921765239" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="xml update">
       <created>1610124239614</created>
