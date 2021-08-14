@@ -1,6 +1,6 @@
 ﻿namespace MeetUp.IoC.Automappers
 {
-    public class AppAutomappers
+    public class AppAutoMappers //: Profile
     {
         
     }
