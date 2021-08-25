@@ -6,10 +6,10 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ValueService {
 
-  constructor(private http: HttpClient) {
+  constructor(private _http: HttpClient) {
   }
 
   getValue(): any {
-    return this.http.get('https://localhost:44322/api/values');
+    return this._http.get('https://localhost:44322/api/values');
   }
 }

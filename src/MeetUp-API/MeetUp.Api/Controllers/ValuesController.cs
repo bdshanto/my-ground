@@ -19,7 +19,7 @@ namespace MeetUp.Api.Controllers
         }
 
         // GET: api/<ValuesController>
-        [HttpGet]
+        [HttpGet("Get")]
         public async Task<IActionResult> GetValues()
         {
             var dataList = await _context.Values.ToListAsync();

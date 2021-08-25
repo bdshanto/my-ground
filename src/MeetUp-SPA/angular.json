@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "MeetupApp"
+  "defaultProject": "MeetupApp",
+  "cli": {
+    "analytics": "46fced40-e844-4e9c-93cc-fa1c7bee469d"
+  }
 }

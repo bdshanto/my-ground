@@ -4,17 +4,19 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Mime;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using MeetUp.Domains.Dtos;
 using MeetUp.Domains.Entities;
 using MeetUp.Repo.Contract.IRepositoryContracts;
+using Microsoft.AspNetCore.Http;
 
 namespace MeetUp.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class AuthController : ControllerBase
+    public class AuthController : Controller
     {
         private readonly IAuthRepository _iAuthRepository;
         private readonly IConfiguration _iConfiguration;
@@ -26,6 +28,8 @@ namespace MeetUp.Api.Controllers
         }
 
         [HttpPost("register")]
+        [Consumes(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(StatusCodes.Status302Found, Type = typeof(JsonResult))]
         public async Task<IActionResult> Register(UserForRegisterDto forRegisterDto)
         {
             if (!ModelState.IsValid) return BadRequest();
