@@ -1,6 +1,6 @@
 ﻿namespace MeetUp.Domains.Utilities
 {
-    public class Utility
+    public static class Utility
     {
 
     }
