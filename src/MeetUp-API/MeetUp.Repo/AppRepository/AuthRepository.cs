@@ -1,9 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using MeetUp.DataContext.Models;
-using MeetUp.Model.Models;
-using MeetUp.Repo.Contract;
+﻿using MeetUp.DataContext.ApplicationDbContext;
+using MeetUp.Repo.Contract.IRepositoryContracts;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
+using MeetUp.Domains.Entities;
 
 namespace MeetUp.Repo.AppRepository
 {

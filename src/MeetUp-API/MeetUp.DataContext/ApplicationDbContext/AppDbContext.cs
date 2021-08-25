@@ -1,7 +1,7 @@
-﻿using MeetUp.Model.Models;
+﻿using MeetUp.Domains.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace MeetUp.DataContext.Models
+namespace MeetUp.DataContext.ApplicationDbContext
 {
     public class AppDbContext : DbContext
     {

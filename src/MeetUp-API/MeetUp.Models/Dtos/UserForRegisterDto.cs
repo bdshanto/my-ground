@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MeetUp.Models.Dtos
+namespace MeetUp.Domains.Dtos
 {
     public class UserForRegisterDto
     {

@@ -1,6 +1,7 @@
-﻿using MeetUp.DataContext.Models;
+﻿using MeetUp.DataContext.ApplicationDbContext;
 using MeetUp.Repo.AppRepository;
 using MeetUp.Repo.Contract;
+using MeetUp.Repo.Contract.IRepositoryContracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

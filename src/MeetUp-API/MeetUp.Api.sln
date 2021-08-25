@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.Api", "MeetUp.Api\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.DataContext", "MeetUp.DataContext\MeetUp.DataContext.csproj", "{7B65F066-2671-43DB-8239-34C78105B0D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.Models", "MeetUp.Models\MeetUp.Models.csproj", "{6C27AFA1-F38E-418D-B13B-083E9B328881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.Domains", "MeetUp.Models\MeetUp.Domains.csproj", "{6C27AFA1-F38E-418D-B13B-083E9B328881}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.Repo", "MeetUp.Repo\MeetUp.Repo.csproj", "{F6664AF9-7E30-44D2-9CE1-88F246163A6B}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.Repo.Contract", "Mee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetUp.IoC", "MeetUp.IoC\MeetUp.IoC.csproj", "{9AC54316-E0F6-4132-BD0C-66CA37906BF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{7F59624D-06F1-410E-AF99-1B7E31B7721C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base", "Base\Base.csproj", "{7F59624D-06F1-410E-AF99-1B7E31B7721C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

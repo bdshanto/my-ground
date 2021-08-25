@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using MeetUp.Model.Models;
+using MeetUp.Domains.Entities;
 
-namespace MeetUp.Repo.Contract
+namespace MeetUp.Repo.Contract.IRepositoryContracts
 {
     public interface IAuthRepository
     {

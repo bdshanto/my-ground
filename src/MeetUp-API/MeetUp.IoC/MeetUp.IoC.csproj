@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MeetUp.DataContext\MeetUp.DataContext.csproj" />
-    <ProjectReference Include="..\MeetUp.Models\MeetUp.Models.csproj" />
+    <ProjectReference Include="..\MeetUp.Models\MeetUp.Domains.csproj" />
     <ProjectReference Include="..\MeetUp.Repo.Contract\MeetUp.Repo.Contract.csproj" />
     <ProjectReference Include="..\MeetUp.Repo\MeetUp.Repo.csproj" />
   </ItemGroup>

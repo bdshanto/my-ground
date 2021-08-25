@@ -1,6 +1,4 @@
-﻿using MeetUp.Model.Models;
-using MeetUp.Models.Dtos;
-using MeetUp.Repo.Contract;
+﻿using MeetUp.Repo.Contract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -9,6 +7,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using MeetUp.Domains.Dtos;
+using MeetUp.Domains.Entities;
+using MeetUp.Repo.Contract.IRepositoryContracts;
 
 namespace MeetUp.Api.Controllers
 {

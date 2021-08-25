@@ -1,4 +1,4 @@
-﻿namespace MeetUp.Model.Utilities
+﻿namespace MeetUp.Domains.Utilities
 {
     public class Utility
     {

@@ -1,4 +1,4 @@
-using MeetUp.DataContext.Models;
+using MeetUp.DataContext.ApplicationDbContext;
 using MeetUp.IoC.DependencyInjections;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,7 +24,7 @@ namespace MeetUp.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddControllers().SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddCors();
 
             //DI

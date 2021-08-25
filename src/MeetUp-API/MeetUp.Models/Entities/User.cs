@@ -1,4 +1,4 @@
-﻿namespace MeetUp.Model.Models
+﻿namespace MeetUp.Domains.Entities
 {
     public class User
     {
